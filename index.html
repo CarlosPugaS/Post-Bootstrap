@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto Instagram Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div>
+    <div id="Navbar">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        <div>
+          <i class="fa-brands fa-instagram"></i>
+          <a class="navbar-brand">Instagram</a>
+        </div>
+          <form class="d-flex gap-2" role="search">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new Post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new Post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label"><strong>Caption:</strong></label>
+                      <textarea placeholder="Add the caption of your post here" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <i class="fa-solid fa-camera pl-5"></i>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-secondary">
+                <li><a class="dropdown-item active" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+    
+    <div id="content" class="">
+      
+          <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="row pt-5">
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://t1.uc.ltmcdn.com/es/posts/8/3/9/como_saber_si_un_cachorro_de_golden_retriever_es_puro_50938_3_600.webp" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://img.freepik.com/fotos-premium/grupo-jovenes-estudiantes-felices-universidad_85574-4531.jpg" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2015/04/bigstock-Old-City-of-Dubrovnik-Croatia-63043978.jpg?w=600&ssl=1"></div>
+                </div>
+                <div class="row">
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://img.freepik.com/fotos-premium/mujer-negra-sonriendo-estudio_220770-11842.jpg" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://cdn.pariscityvision.com/library/image/5144.jpg" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/11/14/15737592853887.jpg"></div>
+                </div>
+                <div class="row">
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://institutodafamilia.es/wp-content/uploads/2022/12/78-familia-o.webp" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://huddle.eurostarsoftwaretesting.com/wp-content/uploads/2018/08/code.jpg" alt=""></div>
+                  <div class="col-4 p-1"><img class="w-100 h-100" src="https://www.questionpro.com/blog/wp-content/uploads/2018/08/cuestionario-para-estudiantes.jpg"></div>
+                </div>
+              </div>
+              </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+              <div class="d-flex justify-content-center pt-3">
+                <div class="card w-50">
+                  <div class="card-header d-flex justify-content-between bg-white">
+                    <h4>My Crazy dog Spark!</h4>
+                    <small>08/28</small>
+                  </div>
+                  <div class="card-body m-0 p-0">
+                    <img src="https://t1.uc.ltmcdn.com/es/posts/8/3/9/como_saber_si_un_cachorro_de_golden_retriever_es_puro_50938_3_600.webp" alt="perro" class="w-100">
+                  </div>
+                  <div class="card-footer">
+                    <p><strong>204 Likes</strong></p>
+                    <p>This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center pt-3">
+                <div class="card w-50">
+                  <div class="card-header d-flex justify-content-between bg-white">
+                    <h4>The greatness of Croatia</h4>
+                    <small>08/28</small>
+                  </div>
+                  <div class="card-body m-0 p-0">
+                    <img src="https://i0.wp.com/blog.vayacruceros.com/wp-content/uploads/2015/04/bigstock-Old-City-of-Dubrovnik-Croatia-63043978.jpg?w=600&ssl=1" alt="perro" class="w-100">
+                  </div>
+                  <div class="card-footer">
+                    <p><strong>26985 Likes</strong></p>
+                    <p>This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center pt-3">
+                <div class="card w-50">
+                  <div class="card-header d-flex justify-content-between bg-white">
+                    <h4>Amazing GOAL by Zlatan!</h4>
+                    <small>08/28</small>
+                  </div>
+                  <div class="card-body m-0 p-0">
+                    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/11/14/15737592853887.jpg" alt="perro" class="w-100">
+                  </div>
+                  <div class="card-footer">
+                    <p><strong>35200 Likes</strong></p>
+                    <p>This is an example of a very good photo that you can post on instagram</p>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </div>
+
+
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>    
+</body>
+</html>
